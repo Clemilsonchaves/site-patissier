@@ -18,6 +18,8 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 24px ;
+    position: fixed;
+    width: 100%;
     font-family: 'Roboto' , sans-serif;
     cursor: pointer;
 }
@@ -44,6 +46,7 @@ body {
 }
 
 #container {
+    padding: 148px 40px 40px;
     width: 100%;
     min-width: 360px;
     background: black;
@@ -52,7 +55,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:flex-end;
     flex-wrap: wrap;
     gap: 50px;
     row-gap: 50px;
