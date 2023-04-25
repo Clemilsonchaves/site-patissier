@@ -8,206 +8,184 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:wght@700&display=swap" rel="stylesheet">
-        <title>Patissier</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <title>Pâtissier Pães e Doces</title>
     </head>
-    <body>
-        <header>
-            <nav class="navbar">
-            <img class="logo" src="./assets/logo.jpg" alt="">
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-            </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <body>
+        <header> <!--Cabeçalho-->
+            <nav class="navbar">
+
+                <img class="logo" src="./assets/logo.jpg" alt="logo patissier">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+
+                <div class="hamburger"> <!--Menu Hambúrguer Para quando tiver no Responsivo-->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
             </nav>
 
         </header>
+        
+       
+        <div class="main"> <!--Apresentação da Página-->
+            <div class="patissier">
+                <h1>Pâtissier Pães e Doces</h1>
+                <p>
+                    A Pâtissier Pães e Doces Está Localizada no Jd Pestana Osasco-SP. PRÓXIMO AO KM18 <br>
+                    Servimos Café da Manhã, Almoço Temos Salgados diversos, Bolos e Pães.
+                </p>
 
-        <div class="main">
-            <div>
-            <h1>Pâtissier</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur ducimus quia labore quos cum! Dolore aliquam ducimus id.
-            Quos dolorem, nesciunt voluptas accusamus totam beatae
-            natus nisi error repellendus mollitia?
             </div>
+
         </div>
 
-        <section id="container">
+        <section id="container"> <!--Card de imagens de produtos-->
 
-            <div>
-                <img class="card" src="./assets/pao-frances.jpg" alt="">
+            <div class="card-pao-frances">
                 <p>Pão Francês</p>
             </div>
 
-            <div>
-                <img class="card" src="./assets/paes-diversos.jpg" alt="">
+            <div class="card-pao-diverso">
                 <p>Pães Diversos</p>
             </div>
 
-            <div>
-                <img class="card" src="./assets/bolos.jpg" alt="">
+            <div class="card-bolo">
                 <p>Bolos</p>
             </div>
 
-            <div>
-                <img class="card" src="./assets/doces-gelados.jpg" alt="">
+            <div class="card-doce-gelado">
                 <p>Doces Gelados</p>
             </div>
 
         </section>
 
-        <div class="receitas">
+        <div class="cardapio">
 
-            <div class="content">
-                <img src="./assets/bolos.jpg" alt="">
-                <h3>Bolo de Chocolate</h3>
-                <p>
-                Farinha &nbsp;----------------------------600g <br>
-                Açúcar &nbsp;-----------------------------500g <br>
-                Ovos &nbsp; -------------------------------05uni <br>
-                Óleo &nbsp;---------------------------------200ml <br>
-                Fermento &nbsp;-------------------------40g <br>
-                Chocolate em Pó &nbsp;-------------80g <br>
-                Leite &nbsp;---------------------------------300ml <br>
-                Essência de Baunilha &nbsp;------10ml
-                </p> 
-                <hr>
-                <h4>Modo de Preparo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius animi deserunt doloribus omnis fugit blanditiis magnam qui voluptatibus quasi! Tempore itaque exercitationem ducimus hic 
-                    vero placeat ullam? Necessitatibus, error possimus?
-                </p>
+            <h1>Cárdapio</h1>
 
+            <div class="slider">
+
+                <div class="slides">
+                    <!--Radius Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- Fim Radius Buttons-->
+
+                    <!--Slide imagens-->
+                    <div class="slide first">
+                        <img src="./assets/doces-gelados.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/paes-diversos.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./assets/pao-frances.jpg" alt="">
+                    </div>
+                    <!--Fim Slide imagens-->
+
+                    <!--Navigation auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="manual-navigation">
+                   <label for="radio1" class="manual-btn"></label> 
+                   <label for="radio2" class="manual-btn"></label> 
+                   <label for="radio3" class="manual-btn"></label> 
+                </div>
             </div>
+           
+        </div>
 
-            <div class="content">
-                <img src="./assets/bolos.jpg" alt="">
-                <h3>Bolo de Chocolate</h3>
-                <p>
-                Farinha &nbsp;----------------------------600g <br>
-                Açúcar &nbsp;-----------------------------500g <br>
-                Ovos &nbsp; -------------------------------05uni <br>
-                Óleo &nbsp;---------------------------------200ml <br>
-                Fermento &nbsp;-------------------------40g <br>
-                Chocolate em Pó &nbsp;-------------80g <br>
-                Leite &nbsp;---------------------------------300ml <br>
-                Essência de Baunilha &nbsp;------10ml
-                </p> 
-                <hr>
-                <h4>Modo de Preparo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius animi deserunt doloribus omnis fugit blanditiis magnam qui voluptatibus quasi! Tempore itaque exercitationem ducimus hic 
-                    vero placeat ullam? Necessitatibus, error possimus?
-                </p>
+        <div class="bg-form">
 
-            </div>
+            <div class="form"> <!--Formulário-->
+                <form action="https://formsubmit.co/patissierdoces@gmail.com" method="POST">
+                    <h2 class="form-h2">Faça sua Perguta ou Sugestão</h2>
 
-            <div class="content">
-                <img src="./assets/bolos.jpg" alt="">
-                <h3>Bolo de Chocolate</h3>
-                <p>
-                Farinha &nbsp;----------------------------600g <br>
-                Açúcar &nbsp;-----------------------------500g <br>
-                Ovos &nbsp; -------------------------------05uni <br>
-                Óleo &nbsp;---------------------------------200ml <br>
-                Fermento &nbsp;-------------------------40g <br>
-                Chocolate em Pó &nbsp;-------------80g <br>
-                Leite &nbsp;---------------------------------300ml <br>
-                Essência de Baunilha &nbsp;------10ml
-                </p> 
-                <hr>
-                <h4>Modo de Preparo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius animi deserunt doloribus omnis fugit blanditiis magnam qui voluptatibus quasi! Tempore itaque exercitationem ducimus hic 
-                    vero placeat ullam? Necessitatibus, error possimus?
-                </p>
+                    <input type="hidden" name="_next" target="_blank" value="https://clemilsonchaves.github.io/pagina-agradecimentos/">
+                    
+                    <input type="text" name="name" placeholder="Nome" equired>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="messege"  placeholder="Digite sua Mensagem..." required></textarea>
 
-            </div>
-
-            <div class="content">
-                <img src="./assets/bolos.jpg" alt="">
-                <h3>Bolo de Chocolate</h3>
-                <p>
-                Farinha &nbsp;----------------------------600g <br>
-                Açúcar &nbsp;-----------------------------500g <br>
-                Ovos &nbsp; -------------------------------05uni <br>
-                Óleo &nbsp;---------------------------------200ml <br>
-                Fermento &nbsp;-------------------------40g <br>
-                Chocolate em Pó &nbsp;-------------80g <br>
-                Leite &nbsp;---------------------------------300ml <br>
-                Essência de Baunilha &nbsp;------10ml
-                </p> 
-                <hr>
-                <h4>Modo de Preparo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eius animi deserunt doloribus omnis fugit blanditiis magnam qui voluptatibus quasi! Tempore itaque exercitationem ducimus hic 
-                    vero placeat ullam? Necessitatibus, error possimus?
-                </p>
+                    <button type="submit">Enviar</button>
+                </form>
 
             </div>
 
         </div>
-        <hr>
 
-        <div class="form">
-            <form action="https://formsubmit.co/patissierdoces@gmail.com" method="POST">
-                <h2 class="form-h2">Faça sua Perguta ou Sugestão</h2>
+        <hr style="border-style: dashed; border-width: 1px;">
 
-                <input type="hidden" name="_next" target="_blank" value="https://clemilsonchaves.github.io/pagina-agradecimentos/">
-                
-                <input type="text" name="name" placeholder="Nome" equired>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <textarea name="messege"  placeholder="Digite sua Mensagem..." required></textarea>
 
-                <button type="submit">Enviar</button>
-           </form>
-        </div>
-        <hr>
         
-        <div class="iframe">
+        <div class="iframe"> <!--Mapa do Google da Localização-->
             <h2 class="iframe-h2">Faça-nos uma Visita</h2>
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117054.18687160716!2d-46.9114923477173!3d-23.534540225191375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff3c51c5a681%3A0xd275980a4256436a!2sP%C3%A2tissier%20P%C3%A3es%20e%20Doces!5e0!3m2!1spt-BR!2sbr!4v1675419477206!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <footer>
-            <div id="social-links">
+        
+    
+        </div>
+    
+         <!--link do Logo do Whatsapp Fixado em baixo--> 
+        <div class="whats">
+          <a href="https://wa.me/5511982814858" target="_blank"> <img src="./assets/logo-whats.jpg" alt="Botão Whatsapp"> </a>
+        </div>
+
+        <footer id="footer">
+
+            <h2>Contato</h2>
+            <div id="social">
                 
-                <a href="https://instagram.com/clemilsonchaves" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
+                <a href="https://instagram.com/patissierpaesedoces" target="_blank">
+                <ion-icon class="insta" name="logo-instagram"></ion-icon>
                 </a>
-                <a href="https://www.youtube.com/channel/UC-d94UcqJFqssRcca8_tEbg" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
+                <a href="https://www.facebook.com/patissierpaesedoces" target="_blank">
+                <ion-icon class="face" name="logo-facebook"></ion-icon>
                 </a>
-                <a href="https://www.linkedin.com/in/clemilson-chaves-73363a51" target="_blank">
-                <ion-icon name="logo-whatsapp"></ion-icon>
+                <a href="https://wa.me/5511982814858" target="_blank">
+                <ion-icon class="whats" name="logo-whatsapp"></ion-icon>
                 </a>
             </div>
 
-            <div class="mvv">
-                <a href="#">MISSÃO</a>
-                <a href="#">VISÃO</a>
-                <a href="#">VALOR</a>
+            <div class="info1">
+                <p>Pâtissier Pães e Doces Ltda.</p>
+                <p>CNPJ:40.060/911.0001-29</p>
             </div>
 
-            <div class="info">
-               <p> Pâtissier Pães e Doces &copy;2023 Todos os Direitos Reservado.</p>
+            <div class="info2">
+                <p>Pâtissier Pães e Doces &copy; 2023 Todos os Direitos Reservados.</p>
+                <p> Desenvolvido por DijePages<a href="https://www.facebook.com/profile.php?id=100091794792660&mibextid=ZbWKwL"> <i
+                class="fab fa-facebook"></i></a> <a href="https://instagram.com/dijepages?igshid=ZDdkNTZiNTM="> <i
+                class="fab fa-instagram"></i></a> </p>
             </div>
         </footer>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
-    <script src="./script.js"></script>
+
+    <script src="./script.js" defer></script> <!--link do javascript-->
+    
 </html>
