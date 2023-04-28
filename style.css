@@ -622,7 +622,7 @@ ion-icon:hover {
     .main {
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 720px;
+        width: 740px;
         min-width: 800px; 
     }
 
@@ -652,6 +652,10 @@ ion-icon:hover {
    .cardapio {
         width: 720px;
         min-width: 800px; 
+   }
+
+   .navigation-auto div {
+    border-color: white;
    }
     
    .bg-form {
