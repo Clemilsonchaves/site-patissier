@@ -7,19 +7,47 @@ hamburger.addEventListener("click", () => {
 })
 
 
-let count = 1;
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev-button');
+const btnNext = document.getElementById('next-button');
 
-document.getElementById("radio1").checkd = true;
+let currentSlide = 0;
 
-setInterval(function () {
-    nextImage();
-}, 6000)
+function hideSlider() {
+    slider.forEach(item => item.classList.remove('on'))
+}
 
-function nextImage() {
-    count++; 
-    if (count >3){
-        count = 1;
+function showSlider() {
+    slider[currentSlide].classList.add('on')
+}
+
+function nextSlider() {
+    hideSlider()
+    if(currentSlide === slider.length - 1) {
+        currentSlide = 0 }
+
+    else {
+        currentSlide ++
     }
 
-    document.getElementById("radio" +count).checked = true;
-}
+    showSlider()
+
+ }
+
+ function prevSlider() {
+    hideSlider()
+    if(currentSlide === 0) {
+        currentSlide = slider.length - 1 }
+
+    else {
+        currentSlide --
+    }
+
+    showSlider()
+
+ }
+
+
+
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)

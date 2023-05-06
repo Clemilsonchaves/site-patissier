@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <title>Pâtissier Pães e Doces</title>
+
     </head>
 
     <body>
@@ -43,7 +44,7 @@
                 <h1>Pâtissier Pães e Doces</h1>
                 <p>
                     A Pâtissier Pães e Doces Está Localizada no Jd Pestana Osasco-SP. PRÓXIMO AO KM18 <br>
-                    Servimos Café da Manhã, Almoço, Temos Salgados diversos, Bolos e Pães e Doces.
+                    Servimos Café da Manhã, Almoço, Temos Salgados diversos,  Pães, Bolos e Doces.
                 </p>
 
             </div>
@@ -70,51 +71,17 @@
 
         </section>
 
-        <div class="cardapio">
+         <div class="cardapio">
+        
 
-            <h1>Cárdapio</h1>
-
-            <div class="slider">
-
-                <div class="slides">
-                    <!--Radius Buttons-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <!-- Fim Radius Buttons-->
-
-                    <!--Slide imagens-->
-                    <div class="slide first">
-                        <img src="./assets/doces-gelados.jpg" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/paes-diversos.jpg" alt="">
-                    </div>
-
-                    <div class="slide">
-                        <img src="./assets/pao-frances.jpg" alt="">
-                    </div>
-                    <!--Fim Slide imagens-->
-
-                    <!--Navigation auto-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="manual-navigation">
-                   <label for="radio1" class="manual-btn"></label> 
-                   <label for="radio2" class="manual-btn"></label> 
-                   <label for="radio3" class="manual-btn"></label> 
-                </div>
+            <button id="prev-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <div class="container-images">
+                <img class="slider on" src="./assets/doces-gelados.jpg" alt="">
+                <img class="slider" src="./assets/paes-diversos.jpg" alt="">
+                <img class="slider" src="./assets/pao-frances.jpg" alt="">
             </div>
-           
-        </div>
+            <button id="next-button" ><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+         </div>
 
         <div class="bg-form">
 
@@ -186,6 +153,6 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 
-    <script src="./script.js" defer></script> <!--link do javascript-->
+    <script src="./script.js" defer ></script> <!--link do javascript-->
     
 </html>

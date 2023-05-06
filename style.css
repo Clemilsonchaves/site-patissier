@@ -33,6 +33,7 @@
 
 header {
     width: 100%;
+    min-width: 270px;
     position: fixed;
     background: var(--backgroud);
     font-family: 'Roboto', sans-serif;
@@ -41,7 +42,7 @@ header {
 }
 
 header  ul {
-    padding-top: 16px;
+    display: flex;
     margin-right: 80px;
 }
 
@@ -100,7 +101,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
-    min-width: 100%;
+    min-width: 270px;
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -122,7 +123,7 @@ a {
     margin-top: 90px;
     padding-top: 20px;
     width: 40%;
-    min-width: 40%;
+    min-width: 30%;
     height: 100%;
     border: 1px solid #F6800B;
     border-radius: 6px;
@@ -161,6 +162,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
+    min-width: 270px;
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -175,7 +177,7 @@ a {
     background-image: url(./assets/pao-frances.jpg);
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 35%;
     border-radius: 6px;
     border: 1px solid #696969;
 
@@ -185,7 +187,7 @@ a {
     background-image: url(./assets/paes-diversos.jpg);
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 35%;
     border-radius: 6px;
     border: 1px solid #696969;
 }
@@ -194,7 +196,7 @@ a {
     background-image: url(./assets/bolos.jpg);
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 35%;
     border-radius: 6px;
     border: 1px solid #696969;
 }
@@ -203,7 +205,7 @@ a {
     background-image: url(./assets/doces-gelados.jpg);
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 35%;
     border-radius: 6px;
     border: 1px solid #696969;
 }
@@ -219,7 +221,7 @@ a {
     font-size: 1em;
     font-weight: 900;
     background: #D2691E;
-    width: 220px;
+    width: 160px;
     height: 40px;
     margin-top: 350px;
     margin-bottom: 20px;
@@ -232,141 +234,73 @@ a {
 .cardapio {
     background-color: #8B4513;
     width: 100%;
-    height: 550px;
+    min-height: 100vh;
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
-}
-
-.cardapio h1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: 'parisienne', courier;
-    font-weight: 900; 
-    color: black;
-    background-color: #D2691E;
-    width: 30%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    border: 1px solid #696969;
-
-
-}
- 
-.slider {
-    margin: 0 auto;
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-    border: 1px solid #696969;
-    border-radius: 6px;
+    gap: 1rem;
     
 }
 
-.slides {
-    width: 400%;
-    height: 400px;
+#prev-button  {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3%;
+    font-size: 2em;
+    margin-right: 10px;
+    border: 1px solid #696969;
+    background: #FFFF;
+    cursor: pointer;
+    color: #FF8C00;
+    
 
+    
 }
 
-.slides input {
-    display: none;
+#next-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3%;
+    font-size: 2em;
+    margin-left: 10px;
+    border: 1px solid   #696969;
+    background: #FFFF;
+    cursor: pointer;
+    color: #FF8C00;
 }
-
-.slide {
-    width: 25%;
+.container-images {
     position: relative;
-    transition: 2s;
-}
-
-.slide img {
-    width: 800px;
-
-    margin-top: 0;
-    cursor: pointer ;
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 700px;
-    margin-top: -40px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 560px;
+    height: 800px;
 }
 
-.manual-btn {
-    border: 2px solid #ffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #ffff;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-.navigation-auto div {
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
+.slider {
     position: absolute;
-    width: 700px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    height: 60vh;
+    border-radius: 6px;
+    border: 1px  solid #696969;
+    opacity: 0;
+    transition: opacity .2s;
 }
 
-.navigation-auto  div:not(:last-child){
-    margin-right: 40px;
+.on {
+    opacity: 1;
 }
-
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: #fff;
-}
-
 
 .bg-form {
     background-color: #FFA500;
     padding-top: 20px;
     padding-bottom: 20px;
+    min-width: 270px;
 }
 .form {
     display: flex;
@@ -449,6 +383,7 @@ textarea {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    min-width: 270px;
     background: #FF8C00;
 
 }
@@ -474,6 +409,7 @@ hr{
 
 #footer {
     width: 100%;
+    min-width: 270px;
     background: gray;
     display: flex;
     flex-direction: column;
@@ -563,7 +499,7 @@ ion-icon:hover {
   
 
   
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 280px){
 
     header {
         width: 100%;
@@ -650,16 +586,33 @@ ion-icon:hover {
     }
     
    .cardapio {
-        width: 720px;
+        width: 100%;
+        height: 100%;
         min-width: 800px; 
    }
 
-   .navigation-auto div {
-    border-color: white;
+   #prev-button, #next-button {
+    padding: 16px;
+    margin: 40px;
+    width: 6%;
+    min-width: 20px;
+   }
+
+   .container-images {
+    min-width: 260px;
+   }
+
+   .slider {
+    height: 600px;
+    margin-bottom: 20px;
+    min-width: 260px;
+    
+
    }
     
    .bg-form {
         width: 720px;
+        height: 100%;
         min-width: 800px; 
     
    }
@@ -693,9 +646,9 @@ ion-icon:hover {
     bottom: 10px;
     right: 10px;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-  }
+    width: 70px;
+    height: 70px;
+   }
 }
 
 
