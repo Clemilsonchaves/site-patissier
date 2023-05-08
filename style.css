@@ -499,7 +499,7 @@ ion-icon:hover {
 @media screen and (max-width: 768px) and (min-width: 280px){
 
     header {
-    
+      text-decoration: none;
     }
     
     .logo {
